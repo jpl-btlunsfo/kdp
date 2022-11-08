@@ -8,7 +8,7 @@
 # imagePullPolicy can be Always, IfNotPresent, or Never (not recommended)
 # Specifying :latest tag on image is same as imagePullPolicy: Always
 image: kdp-operator:latest 
-imagePullPolicy: "Always"
+imagePullPolicy: "IfNotPresent"
 
 # Less common configuration
 #

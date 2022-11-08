@@ -10,7 +10,7 @@ spec:
       containers:
       - name: "{container_name}"
         image: "{container_image}"
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         env:
         - name: DATA_JSON
           value: '{data_json}'

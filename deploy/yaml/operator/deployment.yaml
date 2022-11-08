@@ -18,4 +18,5 @@ spec:
       serviceAccountName: kdp-account
       containers:
       - name: kdp-operator-container
-        image: nasa-pds/kdp/operator:latest 
+        image: kdp-operator:latest
+        imagePullPolicy: IfNotPresent
