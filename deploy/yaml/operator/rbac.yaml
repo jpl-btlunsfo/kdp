@@ -5,7 +5,7 @@ metadata:
   namespace: kdp
   name: kdp-account
 ---
-apiVersion: rbac.authorization.k8s.io/v1beta1
+apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
   name: kdp-role-cluster
@@ -37,7 +37,7 @@ rules:
     resources: [pods, services, configmaps, events]
     verbs: [create, patch]
 ---
-apiVersion: rbac.authorization.k8s.io/v1beta1
+apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRoleBinding
 metadata:
   name: kdp-rolebinding-cluster
